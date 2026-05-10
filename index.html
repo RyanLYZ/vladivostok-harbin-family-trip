@@ -463,11 +463,13 @@ details[open] summary .arrow { transform:rotate(180deg); }
 
     <!-- RIGHT: sticky photo panel -->
     <div class="spot-photos" id="spotPhotos">
-      <img class="photo-main" id="photoMain" src="real_photos/photo_005.jpg" alt="金角湾大桥" onclick="openLightboxFromPanel()">
+      <img class="photo-main" id="photoMain" src="spots/golden-horn_1.jpg" alt="金角湾大桥" onclick="openLightboxFromPanel()">
       <div class="photo-thumbs" id="photoThumbs">
-        <img src="real_photos/photo_005.jpg" alt="" class="active" data-idx="0">
+        <img src="spots/golden-horn_1.jpg" alt="" class="active" data-idx="0">
+        <img src="spots/golden-horn_2.jpg" alt="" data-idx="1">
+        <img src="spots/golden-horn_3.jpg" alt="" data-idx="2">
       </div>
-      <div class="photo-label" id="photoLabel">金角湾大桥 · 1/1 · 点击放大</div>
+      <div class="photo-label" id="photoLabel">金角湾大桥 · 1/3 · 点击放大</div>
     </div>
   </div>
 </div>
@@ -506,9 +508,9 @@ details[open] summary .arrow { transform:rotate(180deg); }
     <div class="hotel-tier economy"><span class="tier-label">💡 省</span><span>如家商旅(中央大街店)/汉庭(索菲亚店) <a href="https://hotels.ctrip.com/hotel/haerbin28/?checkin=2026-07-09&checkout=2026-07-11&star=2" target="_blank" style="font-size:10px;color:var(--m-primary);">🔗</a></span><span class="hotel-price">~¥300/间/晚</span></div>
     <div class="hotel-tier balanced"><span class="tier-label">⚖️ 均衡</span><span>全季(中央大街店)/花筑漫心(中央大街) <a href="https://hotels.ctrip.com/hotel/haerbin28/?checkin=2026-07-09&checkout=2026-07-11&star=4" target="_blank" style="font-size:10px;color:var(--m-primary);">🔗</a></span><span class="hotel-price">~¥500/间/晚</span></div>
     <div class="hotel-tier comfort"><span class="tier-label">✨ 舒适</span><span>JW万豪/万达嘉华/香格里拉 <a href="https://hotels.ctrip.com/hotel/haerbin28/?checkin=2026-07-09&checkout=2026-07-11&star=5" target="_blank" style="font-size:10px;color:var(--m-primary);">🔗</a></span><span class="hotel-price">~¥900/间/晚</span></div>
-    <div class="hotel-imgs" style="display:flex;gap:10px;">
-      <div style="flex:1;height:80px;border-radius:10px;background:linear-gradient(135deg,#e8d5b7,#c9a96e);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.2);">🏨 哈尔滨酒店</div>
-      <div style="flex:1;height:80px;border-radius:10px;background:linear-gradient(135deg,#b7cfe8,#6ea8d5);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.2);">🏨 中央大街周边</div>
+    <div class="hotel-imgs">
+      <img src="hotels/harbin-hotel_1.jpg" alt="哈尔滨JW万豪酒店" loading="lazy">
+      <img src="hotels/harbin-hotel_2.jpg" alt="哈尔滨中央大街酒店" loading="lazy">
     </div>
   </div>
 
@@ -517,9 +519,9 @@ details[open] summary .arrow { transform:rotate(180deg); }
     <div class="hotel-tier economy"><span class="tier-label">💡 省</span><span>Hostel Valentina/Trip Friend · 市中心 <a href="https://www.booking.com/city/ru/vladivostok.zh-cn.html?checkin=2026-07-11&checkout=2026-07-15&group_adults=4&group_children=2&nflt=class%3D1" target="_blank" style="font-size:10px;color:var(--m-primary);">🔗</a></span><span class="hotel-price">~¥200/间/晚</span></div>
     <div class="hotel-tier balanced"><span class="tier-label">⚖️ 均衡</span><span>AZIMUT Vladivostok(海景)/Versailles <a href="https://www.booking.com/city/ru/vladivostok.zh-cn.html?checkin=2026-07-11&checkout=2026-07-15&group_adults=4&group_children=2&nflt=class%3D4" target="_blank" style="font-size:10px;color:var(--m-primary);">🔗</a></span><span class="hotel-price">~¥500/间/晚</span></div>
     <div class="hotel-tier comfort"><span class="tier-label">✨ 舒适</span><span>Hyatt Regency/Lotte Hotel <a href="https://www.booking.com/city/ru/vladivostok.zh-cn.html?checkin=2026-07-11&checkout=2026-07-15&group_adults=4&group_children=2&nflt=class%3D5" target="_blank" style="font-size:10px;color:var(--m-primary);">🔗</a></span><span class="hotel-price">~¥800/间/晚</span></div>
-    <div class="hotel-imgs" style="display:flex;gap:10px;">
-      <div style="flex:1;height:80px;border-radius:10px;background:linear-gradient(135deg,#b7d8e8,#5a9bbf);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.2);">🏨 海参崴海景酒店</div>
-      <div style="flex:1;height:80px;border-radius:10px;background:linear-gradient(135deg,#e8e0b7,#bfaa5a);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:600;text-shadow:0 1px 3px rgba(0,0,0,0.2);">🏨 市中心商务酒店</div>
+    <div class="hotel-imgs">
+      <img src="hotels/vladivostok-hotel_1.jpg" alt="海参崴AZIMUT海景酒店" loading="lazy">
+      <img src="hotels/vladivostok-hotel_2.jpg" alt="海参崴Hyatt酒店" loading="lazy">
     </div>
   </div>
 
@@ -633,6 +635,9 @@ details[open] summary .arrow { transform:rotate(180deg); }
   <details open>
     <summary>🥟 方案二：海参崴 + 延吉 ⭐ <span style="color:var(--m-accent-gold);font-weight:600;font-size:12px;">朝鲜风情 · 最推荐</span><span class="arrow">▼</span></summary>
     <div class="detail-body">
+      <div style="background:linear-gradient(135deg,#fff8e1,#fff3c4);border-radius:10px;padding:12px 16px;margin-bottom:14px;font-size:13px;border-left:4px solid #ffc107;">
+        <strong>⭐ 推荐理由：</strong>延吉朝鲜族风情与海参崴俄式体验形成<strong>最佳互补</strong>——珲春口岸陆路直达免飞、朝鲜美食+民俗体验独一无二、预算友好(比哈尔滨省¥1500+)、老人小孩适应性好。<strong>适合：</strong>全家出行、首次东北、追求性价比。
+      </div>
       <p style="margin-bottom:12px;font-size:14px;color:var(--text-secondary);">延吉是延边朝鲜族自治州首府，被称为"小韩国"。珲春口岸入境3小时车程，朝鲜族美食+文化体验。与海参崴俄式风情形成互补，避免哈尔滨的重复感。</p>
       
       <h4 style="font-size:13px;font-weight:600;margin:14px 0 8px;">🏛️ 延吉必游景点</h4>
@@ -644,7 +649,7 @@ details[open] summary .arrow { transform:rotate(180deg); }
         <div><strong>水上市场早市</strong><p style="font-size:11px;color:var(--text-secondary);">🎫 免费 · 5:00-9:00 · 地道早餐</p></div>
         <div><strong>恐龙王国主题乐园</strong><p style="font-size:11px;color:var(--text-secondary);">🎫 ¥180/人 · 亲子🦕 · 全年开放</p></div>
       </div>
-      <div class="alt-gallery" data-imgs="yanji/yj_001.webp,yanji/yj_002.webp,yanji/yanji_maoershan.webp" data-alts="延吉朝鲜族民俗园,延吉美食,帽儿山国家森林公园"></div>
+      <div class="alt-gallery" data-imgs="alt-spots/yanji-minsu_1.jpg,alt-spots/yanji-minsu_2.jpg,alt-spots/yanji-minsu_3.jpg,alt-spots/yanji-food_1.jpg,alt-spots/yanji-food_2.jpg,alt-spots/yanji-food_3.jpg,alt-spots/yanji-maoershan_1.jpg,alt-spots/yanji-maoershan_2.jpg,alt-spots/yanji-maoershan_3.jpg" data-alts="朝鲜族民俗园,民俗园建筑,民俗园服饰,延吉美食,朝鲜族冷面,烤肉料理,帽儿山,帽儿山远眺,帽儿山登山"></div>
 
       <h4 style="font-size:13px;font-weight:600;margin:14px 0 8px;">📅 行程安排</h4>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
@@ -694,8 +699,11 @@ details[open] summary .arrow { transform:rotate(180deg); }
   <details>
     <summary>🌊 方案三：海参崴 + 牡丹江 <span style="color:var(--text-muted);font-weight:400;font-size:12px;">自然风光 · 避暑胜地</span><span class="arrow">▼</span></summary>
     <div class="detail-body">
+      <div style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);border-radius:10px;padding:12px 16px;margin-bottom:14px;font-size:13px;border-left:4px solid #2196f3;">
+        <strong>🌊 推荐理由：</strong>镜泊湖是中国最大高山堰塞湖，7月均温22°C是<strong>天然避暑胜地</strong>——吊水楼瀑布壮观震撼、火山口地下森林探秘感强、绥芬河口岸入境便捷。<strong>适合：</strong>自然摄影爱好者、怕热避暑、喜欢山水风光。<strong>注意：</strong>行程较赶(D5-D7三天要完成口岸转场+游览)。
+      </div>
       <p style="margin-bottom:12px;font-size:14px;color:var(--text-secondary);">牡丹江有镜泊湖——中国最大高山堰塞湖，7月22°C凉爽。绥芬河口岸入境即达。吊水楼瀑布+火山口森林是亮点。</p>
-      <div class="alt-gallery" data-imgs="mudanjiang/mdj_001.webp,mudanjiang/mdj_002.webp,mudanjiang/mudanjiang_diaoshuilou.webp" data-alts="镜泊湖瀑布,火山口地下森林,吊水楼瀑布"></div>
+      <div class="alt-gallery" data-imgs="alt-spots/mdj-jingpo_1.jpg,alt-spots/mdj-jingpo_2.jpg,alt-spots/mdj-jingpo_3.jpg,alt-spots/mdj-volcano_1.jpg,alt-spots/mdj-volcano_2.jpg,alt-spots/mdj-volcano_3.jpg,alt-spots/mdj-diaoshui_1.jpg,alt-spots/mdj-diaoshui_2.jpg,alt-spots/mdj-diaoshui_3.jpg" data-alts="镜泊湖瀑布,镜泊湖全景,镜泊湖夏景,火山口地下森林,地下森林,火山口森林,吊水楼瀑布,吊水楼飞瀑,镜泊湖冬景"></div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
         <div class="day-card"><div class="day-num">D1-4</div><div class="day-content"><ul><li>海参崴段同上</li></ul></div></div>
         <div class="day-card"><div class="day-num">D5 · →牡丹江</div><div class="day-content"><ul><li>大巴→绥芬河(3h)</li><li>高铁→牡丹江(2h)</li></ul></div></div>
@@ -734,8 +742,11 @@ details[open] summary .arrow { transform:rotate(180deg); }
   <details>
     <summary>🏛️ 方案四：海参崴 + 长春 <span style="color:var(--text-muted);font-weight:400;font-size:12px;">文化历史 · 室内友好</span><span class="arrow">▼</span></summary>
     <div class="detail-body">
+      <div style="background:linear-gradient(135deg,#f3e5f5,#e1bee7);border-radius:10px;padding:12px 16px;margin-bottom:14px;font-size:13px;border-left:4px solid #9c27b0;">
+        <strong>🏛️ 推荐理由：</strong>长春室内景点占比高，<strong>雨天和老人出行最佳备选</strong>——伪满皇宫历史厚重感强、长影世纪城亲子互动好、海参崴直飞2h衔接最省力。<strong>适合：</strong>雨季出行、老人同行(少走路)、历史文化爱好者。<strong>注意：</strong>与海参崴风格差异较小(都偏俄式/欧式)，互补性不如延吉。
+      </div>
       <p style="margin-bottom:12px;font-size:14px;color:var(--text-secondary);">长春有伪满皇宫、长影世纪城。海参崴直飞长春2h，衔接最方便。室内景点多，雨天友好。</p>
-      <div class="alt-gallery" data-imgs="changchun/cc_001.webp,changchun/cc_002.webp,changchun/cc_003.webp" data-alts="伪满皇宫,净月潭,长影世纪城"></div>
+      <div class="alt-gallery" data-imgs="alt-spots/cc-palace_1.jpg,alt-spots/cc-palace_2.jpg,alt-spots/cc-palace_3.jpg,alt-spots/cc-jingyue_1.jpg,alt-spots/cc-jingyue_2.jpg,alt-spots/cc-jingyue_3.jpg,alt-spots/cc-changying_1.jpg,alt-spots/cc-changying_2.jpg,alt-spots/cc-changying_3.jpg" data-alts="伪满皇宫,伪满皇宫内景,伪满皇宫博物馆,净月潭,净月潭森林,净月潭湖景,长影世纪城,长影博物馆,长春地质宫"></div>
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px;">
         <div class="day-card"><div class="day-num">D1-4</div><div class="day-content"><ul><li>海参崴段同上</li></ul></div></div>
         <div class="day-card"><div class="day-num">D5 · →长春</div><div class="day-content"><ul><li>海参崴直飞长春(2h)</li><li>伪满皇宫博物院</li></ul></div></div>
@@ -868,21 +879,20 @@ const lightboxNext = document.querySelector('.lightbox-next');
 let currentGallery = null;
 let currentIdx = 0;
 
-// Image data per gallery
-// 精准配图：有实拍用实拍，无实拍只留1张最相关封面，避免图不对景
+// Image data per gallery — Wikimedia真实景点照片 + 实拍图
 const galleryData = {
-  'golden-horn': ['real_photos/photo_005.jpg'],         // 金角湾实拍
-  'lighthouse': ['haishenwai/hsw_011.webp'],             // 海参崴海岸线(含灯塔区)
-  'submarine': ['haishenwai/hsw_005.webp'],              // 海参崴攻略(含潜艇)
-  'station': ['haishenwai/hsw_001.webp'],                // 海参崴路线篇(含火车站)
-  'oceanarium': ['haishenwai/hsw_014.webp'],             // 海参崴综合攻略
-  'glass-beach': ['real_photos/photo_003.jpg'],          // 玻璃海滩实拍
-  'sofiya': ['real_photos/photo_004.jpg','harbin/hrb_003.webp'], // 索菲亚实拍+夏景
-  'central-street': ['harbin/hrb_004.webp'],             // 哈尔滨欧式建筑(中央大街)
-  'songhua-bridge': ['harbin/hrb_006.webp'],             // 哈尔滨免费机位(含江桥)
-  'polar': ['harbin/hrb_010.webp'],                      // 哈尔滨亲子旅行地
-  'tiger-park': ['real_photos/photo_001.jpg','real_photos/photo_002.jpg'], // 虎林园实拍
-  'laodaowai': ['harbin/hrb_009.webp']                   // 哈尔滨冷门出片(老道外)
+  'golden-horn': ['spots/golden-horn_1.jpg','spots/golden-horn_2.jpg','spots/golden-horn_3.jpg'],
+  'lighthouse': ['spots/lighthouse_1.jpg','spots/lighthouse_2.jpg','spots/lighthouse_3.jpg'],
+  'submarine': ['spots/submarine_1.jpg','spots/submarine_2.jpg','spots/submarine_3.jpg'],
+  'station': ['spots/station_1.jpg','spots/station_2.jpg','spots/station_3.jpg'],
+  'oceanarium': ['spots/oceanarium_1.webp','spots/oceanarium_2.jpg','spots/oceanarium_3.jpg'],
+  'glass-beach': ['spots/glass-beach_1.jpg','spots/glass-beach_2.jpg','spots/glass-beach_3.jpg'],
+  'sofiya': ['spots/sofiya_1.jpg','spots/sofiya_2.jpg','spots/sofiya_3.jpg'],
+  'central-street': ['spots/central-street_1.jpg','spots/central-street_2.jpg','spots/central-street_3.jpg'],
+  'songhua-bridge': ['spots/songhua-bridge_1.jpg','spots/songhua-bridge_2.jpg','spots/songhua-bridge_3.jpg'],
+  'polar': ['spots/polar_1.webp','spots/polar_2.webp','spots/polar_3.jpg'],
+  'tiger-park': ['spots/tiger-park_1.jpg','spots/tiger-park_2.jpg','spots/tiger-park_3.jpg'],
+  'laodaowai': ['spots/laodaowai_1.webp','spots/laodaowai_2.jpg']
 };
 
 // Spot name map for photo label
