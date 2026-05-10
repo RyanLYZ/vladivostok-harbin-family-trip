@@ -992,25 +992,31 @@ function openLightboxFromPanel() {
 }
 
 /* ============ ALT-GALLERY LAZY INJECT (details展开时加载图片) ============ */
+function injectAltGallery(det) {
+  det.querySelectorAll('.alt-gallery[data-imgs]').forEach(gal => {
+    if (gal.querySelector('img')) return; // already injected
+    const srcs = gal.dataset.imgs.split(',');
+    const alts = (gal.dataset.alts || '').split(',');
+    srcs.forEach((src, i) => {
+      const img = document.createElement('img');
+      img.src = src;
+      img.alt = alts[i] || '';
+      img.addEventListener('click', () => {
+        const id = '_alt_' + Date.now() + '_' + i;
+        galleryData[id] = srcs.map(s => s.trim());
+        openLightbox(id, i);
+      });
+      gal.appendChild(img);
+    });
+  });
+}
 document.querySelectorAll('details').forEach(det => {
+  // 默认open的details立即注入
+  if (det.open) injectAltGallery(det);
+  // 折叠的details等展开时注入
   det.addEventListener('toggle', () => {
     if (!det.open) return;
-    det.querySelectorAll('.alt-gallery[data-imgs]').forEach(gal => {
-      if (gal.querySelector('img')) return; // already injected
-      const srcs = gal.dataset.imgs.split(',');
-      const alts = (gal.dataset.alts || '').split(',');
-      srcs.forEach((src, i) => {
-        const img = document.createElement('img');
-        img.src = src;
-        img.alt = alts[i] || '';
-        img.addEventListener('click', () => {
-          const id = '_alt_' + Date.now() + '_' + i;
-          galleryData[id] = srcs.map(s => s.trim());
-          openLightbox(id, i);
-        });
-        gal.appendChild(img);
-      });
-    });
+    injectAltGallery(det);
   });
 });
 
