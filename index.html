@@ -913,7 +913,8 @@ const galleryData = {
   'songhua-bridge': ['spots/songhua-bridge_1.jpg','spots/songhua-bridge_2.jpg','spots/songhua-bridge_3.jpg'],
   'polar': ['spots/polar_1.webp','spots/polar_2.webp','spots/polar_3.jpg'],
   'tiger-park': ['spots/tiger-park_1.jpg','spots/tiger-park_2.jpg','spots/tiger-park_3.jpg'],
-  'laodaowai': ['spots/laodaowai_1.webp','spots/laodaowai_2.jpg']
+  'laodaowai': ['spots/laodaowai_1.webp','spots/laodaowai_2.jpg'],
+  'hero': ['haishenwai/hsw_013.webp','harbin/hrb_004.webp','real_photos/photo_005.jpg','haishenwai/hsw_011.webp','harbin/hrb_003.webp']
 };
 
 // Spot name map for photo label
@@ -1068,9 +1069,14 @@ document.querySelectorAll('img').forEach(img => {
   img.style.cursor = 'pointer';
   img.addEventListener('click', (e) => {
     e.stopPropagation();
+    const heroBox = img.closest('.hero-images');
     const card = img.closest('.spot-card');
     const panel = img.closest('.spot-photos');
-    if (card && card.dataset.gallery) {
+    if (heroBox) {
+      const heroImgs = heroBox.querySelectorAll('img');
+      const idx = Array.from(heroImgs).indexOf(img);
+      openLightbox('hero', idx >= 0 ? idx : 0);
+    } else if (card && card.dataset.gallery) {
       const idx = parseInt(img.dataset.idx || 0);
       openLightbox(card.dataset.gallery, idx);
     } else if (panel) {
